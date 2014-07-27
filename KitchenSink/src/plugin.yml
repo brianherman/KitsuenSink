@@ -1,0 +1,7 @@
+name: KitchenSink
+main: org.discordpvp.KitchenSink
+version: 0.1
+commands:
+  removePotions:
+    description: Removes Potion Effects
+    usage: "/removepotion"
