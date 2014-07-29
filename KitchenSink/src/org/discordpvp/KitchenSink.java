@@ -21,8 +21,12 @@ public class KitchenSink extends JavaPlugin implements Listener{
 	        }
 	        // After checking to make sure that the sender is a Player, we can safely case it to one.
 	        Player s = (Player) sender;
+
+	        System.out.println("POTION EFFECTS Before" + s.getActivePotionEffects());
 	        for (PotionEffect effect : s.getActivePotionEffects())
 	            s.removePotionEffect(effect.getType());
+	        System.out.println("POTION EFFECTS AFTER" + s.getActivePotionEffects());
+
 //	        for (EntityDamageEvent.DamageCause c : EntityDamageEvent.DamageCause.values())
 //	        	 s.remove
 //	         s.getInventory().addItem(new ItemStack(Material.MILK_BUCKET, 1));
